@@ -50,7 +50,7 @@
 		0A3763591F62545A00A80613 /* CollectionViewManager+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewManager+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
 		0A37635A1F62545A00A80613 /* CollectionViewManager+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewManager+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
 		0A37635B1F62545A00A80613 /* UICollectionView+Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registration.swift"; sourceTree = "<group>"; };
-		0A37635C1F62545A00A80613 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A37635C1F62545A00A80613 /* CollectionViewTools-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CollectionViewTools-Info.plist"; sourceTree = "<group>"; };
 		0A37635E1F62545A00A80613 /* GeneralCollectionViewSectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCollectionViewSectionItem.swift; sourceTree = "<group>"; };
 		0A3763611F62545A00A80613 /* CollectionViewCellItemDataSourcePrefetching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellItemDataSourcePrefetching.swift; sourceTree = "<group>"; };
 		0A3763621F62545A00A80613 /* CollectionViewCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellItem.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		0A3763501F62545A00A80613 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0A37635C1F62545A00A80613 /* Info.plist */,
+				0A37635C1F62545A00A80613 /* CollectionViewTools-Info.plist */,
 				0A3763541F62545A00A80613 /* CollectionViewTools.h */,
 				0A3763531F62545A00A80613 /* CollectionViewManager.swift */,
 				0A3763511F62545A00A80613 /* Additions */,
@@ -468,7 +468,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/CollectionViewTools-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -488,7 +488,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/CollectionViewTools-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
