@@ -14,8 +14,20 @@ public protocol CollectionViewCellItem: CollectionViewConfigureCellItem,
                                         CollectionViewSizeCellItem,
                                         CollectionViewGeneralCellItem,
                                         CollectionViewCellItemDataSource,
-                                        CollectionViewSiblingCellItem {
+                                        CollectionViewSiblingCellItem,
+                                        Differentiable {
     
+}
+
+extension CollectionViewCellItem {
+
+    public var differenceIdentifier: DifferenceIdentifier {
+        return 0
+    }
+
+    public func isContentEqual(to other: Any) -> Bool {
+        return false
+    }
 }
 
 // MARK: - CollectionViewReuseCellItem

@@ -8,12 +8,22 @@ import UIKit.UICollectionView
 import ObjectiveC.runtime
 
 public protocol CollectionViewSectionItem: CollectionViewSiblingSectionItem {
-    var cellItems: [CollectionViewManager.CellItem] { get set }
-    var reusableViewItems: [CollectionViewReusableViewItem] { get set }
+
+    typealias CellItem = CollectionViewCellItem
+    typealias ReusableViewItem = CollectionViewReusableViewItem
+
+    var cellItems: [CellItem] { get set }
+    var reusableViewItems: [ReusableViewItem] { get set }
     
     var minimumLineSpacing: CGFloat { get set }
     var minimumInteritemSpacing: CGFloat { get set }
     var insets: UIEdgeInsets { get set }
+}
+
+// MARK: - DifferentiableCollectionViewSectionItem
+
+public protocol DifferentiableCollectionViewSectionItem: Differentiable, CollectionViewSectionItem {
+    init(sectionItem: Self)
 }
 
 // MARK: - CollectionViewSiblingSectionItem
